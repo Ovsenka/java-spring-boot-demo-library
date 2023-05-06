@@ -1,4 +1,4 @@
-package com.ovsenka;
+package com.ovsenka.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,6 +9,7 @@ import java.util.Objects;
 
 @Entity
 public class Book {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;

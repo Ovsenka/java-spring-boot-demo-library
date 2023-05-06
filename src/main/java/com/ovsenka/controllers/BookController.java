@@ -1,15 +1,20 @@
-package com.ovsenka;
+package com.ovsenka.controllers;
 
+import com.ovsenka.entity.Book;
+import com.ovsenka.repository.BookRepository;
+import com.ovsenka.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.ovsenka.requests.*;
+
+import java.util.Optional;
 
 
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
     @Autowired
-    private final BookService bookService;
+    private BookService bookService;
 
     public BookController(BookService bookService) {
         this.bookService = bookService;
@@ -22,7 +27,6 @@ public class BookController {
 
     @PostMapping
     public ResultRequest addBook(@RequestBody RequestBook request){
-        if (request.getId() == null) throw new IllegalArgumentException();
         return bookService.addBook(request);
     }
     @DeleteMapping("/{bookId}/delete")

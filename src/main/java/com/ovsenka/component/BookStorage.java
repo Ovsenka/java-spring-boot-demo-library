@@ -1,12 +1,13 @@
-package com.ovsenka;
+package com.ovsenka.component;
 
-import org.springframework.stereotype.Repository;
+import com.ovsenka.entity.Book;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Repository
-public class BookRepository {
+@Component
+public class BookStorage {
 
     private final Map<Integer, Book> storage = new HashMap<>();
 

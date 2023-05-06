@@ -1,8 +1,8 @@
 package com.ovsenka.requests;
 
-import com.ovsenka.Book;
+import com.ovsenka.entity.Book;
 
-public class RequestBook {
+public class RequestBook{
     private Integer id;
     private String title;
     private String author;
@@ -41,4 +41,5 @@ public class RequestBook {
     public void setAuthor(String author) {
         this.author = author;
     }
+
 }
