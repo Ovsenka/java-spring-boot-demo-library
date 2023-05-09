@@ -1,13 +1,9 @@
-package com.ovsenka.controllers;
+package com.ovsenka.app.controllers;
 
-import com.ovsenka.entity.Book;
-import com.ovsenka.repository.BookRepository;
-import com.ovsenka.service.BookService;
+import com.ovsenka.app.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.ovsenka.requests.*;
-
-import java.util.Optional;
+import com.ovsenka.app.requests.*;
 
 
 @RestController

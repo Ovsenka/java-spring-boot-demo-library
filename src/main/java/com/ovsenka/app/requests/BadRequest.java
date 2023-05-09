@@ -1,4 +1,4 @@
-package com.ovsenka.requests;
+package com.ovsenka.app.requests;
 
 public interface BadRequest {
     String getTextError();

@@ -1,4 +1,4 @@
-package com.ovsenka.entity;
+package com.ovsenka.app.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
-package com.ovsenka.component;
+package com.ovsenka.app.component;
 
-import com.ovsenka.entity.Book;
+import com.ovsenka.app.entity.Book;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

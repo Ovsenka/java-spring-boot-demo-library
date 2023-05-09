@@ -1,12 +1,11 @@
-package com.ovsenka.service;
+package com.ovsenka.app.service;
 
-import com.ovsenka.entity.Book;
-import com.ovsenka.component.BookStorage;
-import com.ovsenka.repository.BookRepository;
-import com.ovsenka.requests.RequestBook;
+import com.ovsenka.app.entity.Book;
+import com.ovsenka.app.repository.BookRepository;
+import com.ovsenka.app.requests.RequestBook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ovsenka.requests.*;
+import com.ovsenka.app.requests.*;
 
 import java.util.Optional;
 

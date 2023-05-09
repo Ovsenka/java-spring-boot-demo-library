@@ -1,6 +1,6 @@
-package com.ovsenka.requests;
+package com.ovsenka.app.requests;
 
-import com.ovsenka.entity.Book;
+import com.ovsenka.app.entity.Book;
 
 public class RequestBook{
     private Integer id;
